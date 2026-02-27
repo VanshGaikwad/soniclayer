@@ -7,5 +7,5 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 // prefix for api
-app.use('./api/auth',authRoutes);
+app.use('/api/auth',authRoutes);
 module.exports = app;
